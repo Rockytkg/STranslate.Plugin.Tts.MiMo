@@ -1,0 +1,10 @@
+{
+  "PluginID": "f508b0c220774c569db4c6133ff41cca",
+  "Name": "MiMo TTS",
+  "Description": "小米MiMo语音合成插件，支持多样化发音风格",
+  "Author": "Rockytkg",
+  "Version": "1.0.0",
+  "Website": "https://github.com/Rockytkg/STranslate.Plugin.Tts.MiMo",
+  "ExecuteFileName": "STranslate.Plugin.Tts.MiMo.dll",
+  "IconPath": "icon.png"
+}

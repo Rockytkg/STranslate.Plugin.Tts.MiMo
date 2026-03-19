@@ -1,0 +1,24 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url">API URL</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url_Placeholder">https://api.xiaomimimo.com/v1/chat/completions</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey">API Key</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Description">API Key 획득 방법 보기</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Placeholder">API Key를 입력하세요</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Empty">먼저 API Key를 설정해주세요</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Model">모델</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">음성</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">사용 가능한 음성 보기</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">스타일</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">속도 제어, 감정 변화, 롤플레이, 방언 등 지원</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">텍스트 내용이 비어있을 수 없습니다</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">API가 빈 오디오 데이터를 반환했습니다</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">API 응답 파싱에 실패했습니다</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Decode_Error">오디오 데이터 디코딩에 실패했습니다</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support">지원</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support_Description">이 플러그인은 Xiaomi MiMo TTS API를 기반으로 합니다</sys:String>
+
+</ResourceDictionary>

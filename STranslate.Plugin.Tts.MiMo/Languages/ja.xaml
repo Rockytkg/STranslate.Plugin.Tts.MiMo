@@ -1,0 +1,24 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url">API URL</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url_Placeholder">https://api.xiaomimimo.com/v1/chat/completions</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey">API Key</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Description">API Keyの取得方法を確認</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Placeholder">API Keyを入力してください</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Empty">まずAPI Keyを設定してください</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Model">モデル</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">音声</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">利用可能な音声を表示</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">スタイル</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">速度制御、感情変化、ロールプレイ、方言などに対応</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">テキスト内容は空にできません</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">APIが空の音声データを返しました</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">API応答の解析に失敗しました</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Decode_Error">音声データのデコードに失敗しました</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support">サポート</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support_Description">このプラグインは小米MiMo音声合成APIに基づいています</sys:String>
+
+</ResourceDictionary>

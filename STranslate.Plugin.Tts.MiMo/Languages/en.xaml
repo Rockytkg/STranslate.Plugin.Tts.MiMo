@@ -1,0 +1,24 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url">API URL</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Url_Placeholder">https://api.xiaomimimo.com/v1/chat/completions</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey">API Key</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Description">Click to learn how to get API Key</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Placeholder">Enter your API Key</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_ApiKey_Empty">Please configure API Key first</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Model">Model</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">Voice</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">Click to view available voices</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">Style</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">Supports speed, emotion, role-play, dialect, etc.</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">Text content cannot be empty</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">API returned empty audio data</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">Failed to parse API response</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Decode_Error">Failed to decode audio data</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support">Support</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Support_Description">This plugin is based on Xiaomi MiMo TTS API</sys:String>
+
+</ResourceDictionary>
