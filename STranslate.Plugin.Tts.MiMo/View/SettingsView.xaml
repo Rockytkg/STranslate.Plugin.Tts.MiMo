@@ -49,7 +49,7 @@
             </ui:SettingsCard.HeaderIcon>
             <TextBox
                 MinWidth="200"
-                ui:ControlHelper.PlaceholderText="mimo-v2-tts"
+                ui:ControlHelper.PlaceholderText="mimo-v2.5-tts"
                 Text="{Binding Model}" />
         </ui:SettingsCard>
 
