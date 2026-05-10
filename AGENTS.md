@@ -40,7 +40,10 @@ plugin.json          → Plugin manifest (ID, name, dll entry)
 - **Host services via `IPluginContext`**: `LoadSettingStorage<T>()`, `HttpService.PostAsync()`, `AudioPlayer.PlayAsync()`, `Snackbar.Show*()`, `GetTranslation()`
 - **MVVM**: Uses `CommunityToolkit.Mvvm` with `[ObservableProperty]` source generators. Settings auto-save via `PropertyChanged` subscription.
 - **Localization**: Dual format — `.xaml` ResourceDictionary for WPF `{DynamicResource}`, `.json` for plugin metadata. Key prefix: `STranslate_Plugin_Tts_MiMo_`. All 5 languages: en, ja, ko, zh-cn, zh-tw.
-- **API quirk**: MiMo TTS uses Chat Completions format (`/v1/chat/completions`), not a dedicated TTS endpoint. Style is injected as `<style>标签</style>` prefix in message content.
+- **API quirk**: MiMo TTS uses Chat Completions format (`/v1/chat/completions`), not a dedicated TTS endpoint. Two API versions:
+  - **V2.5** (default): Uses `user` message for natural language style control (director mode), `assistant` message for text to synthesize
+  - **V2**: Uses `<style>标签</style>` prefix in assistant content for style injection
+  - Model detection: `Settings.Model.StartsWith("mimo-v2.5")` determines message format
 
 ## Release
 
