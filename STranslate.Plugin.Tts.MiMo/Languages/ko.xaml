@@ -13,7 +13,8 @@
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">음성</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">사용 가능한 음성 보기</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">스타일</sys:String>
-    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">속도 제어, 감정 변화, 롤플레이, 방언 등 지원</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">V2.5: 자연어 스타일 제어 | V2: 스타일 태그</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Placeholder">조금 빠르게, 밝은 톤으로</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">텍스트 내용이 비어있을 수 없습니다</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">API가 빈 오디오 데이터를 반환했습니다</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">API 응답 파싱에 실패했습니다</sys:String>

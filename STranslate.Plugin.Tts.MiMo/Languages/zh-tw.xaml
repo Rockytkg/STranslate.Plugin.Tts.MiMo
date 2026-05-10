@@ -13,7 +13,8 @@
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">音色</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">點擊查看可用音色列表</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">風格</sys:String>
-    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">支援語速控制、情緒變化、角色扮演、方言等</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">V2.5: 自然語言風格控制 | V2: 風格標籤</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Placeholder">語速稍快，語氣歡快</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">文字內容不能為空</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">API傳回的音訊資料為空</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">解析API回應失敗</sys:String>
