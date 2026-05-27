@@ -49,7 +49,7 @@
             </ui:SettingsCard.HeaderIcon>
             <TextBox
                 MinWidth="200"
-                ui:ControlHelper.PlaceholderText="mimo-v2-tts"
+                ui:ControlHelper.PlaceholderText="mimo-v2.5-tts"
                 Text="{Binding Model}" />
         </ui:SettingsCard>
 
@@ -68,7 +68,7 @@
                 SelectedItem="{Binding SelectedVoice}" />
         </ui:SettingsCard>
 
-        <!-- 风格标签配置项 -->
+        <!-- 风格控制配置项 -->
         <ui:SettingsCard Header="{DynamicResource STranslate_Plugin_Tts_MiMo_Style}">
             <ui:SettingsCard.Description>
                 <ui:HyperlinkButton Content="{DynamicResource STranslate_Plugin_Tts_MiMo_Style_Description}" NavigateUri="https://platform.xiaomimimo.com/#/docs/usage-guide/speech-synthesis" />
@@ -78,7 +78,7 @@
             </ui:SettingsCard.HeaderIcon>
             <TextBox
                 MinWidth="200"
-                ui:ControlHelper.PlaceholderText="林黛玉"
+                ui:ControlHelper.PlaceholderText="{DynamicResource STranslate_Plugin_Tts_MiMo_Style_Placeholder}"
                 Text="{Binding Style}" />
         </ui:SettingsCard>
 

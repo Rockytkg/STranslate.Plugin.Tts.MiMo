@@ -31,10 +31,14 @@ public class Settings
     /// 语音合成模型标识符
     /// </summary>
     /// <value>
-    /// 指定使用的TTS模型，默认为 <c>mimo-v2-tts</c>。
-    /// 不同的模型可能支持不同的音色和功能。
+    /// 指定使用的TTS模型，默认为 <c>mimo-v2.5-tts</c>。
+    /// 支持的模型：
+    /// <list type="bullet">
+    ///   <item><c>mimo-v2.5-tts</c> - V2.5预置音色（推荐）</item>
+    ///   <item><c>mimo-v2-tts</c> - V2旧版模型</item>
+    /// </list>
     /// </value>
-    public string Model { get; set; } = "mimo-v2-tts";
+    public string Model { get; set; } = "mimo-v2.5-tts";
 
     /// <summary>
     /// 语音音色标识
@@ -42,25 +46,20 @@ public class Settings
     /// <value>
     /// 指定合成语音的音色。可选值包括：
     /// <list type="bullet">
+    ///   <item><c>Mia</c> - V2.5英文女声（默认）</item>
     ///   <item><c>mimo_default</c> - 默认音色</item>
     ///   <item><c>default_zh</c> - 中文女声</item>
     ///   <item><c>default_en</c> - 英文女声</item>
     /// </list>
     /// </value>
-    public string Voice { get; set; } = "mimo_default";
+    public string Voice { get; set; } = "Mia";
 
     /// <summary>
-    /// 语音风格标签
+    /// 语音风格控制
     /// </summary>
     /// <value>
-    /// 控制语音的表达方式，支持多种风格参数：
-    /// <list type="bullet">
-    ///   <item>语速控制：如 <c> speed:0.8 </c></item>
-    ///   <item>情绪变化：如 <c> emotion:happy </c></item>
-    ///   <item>角色扮演：如 <c> 林黛玉 </c></item>
-    ///   <item>方言口音：如 <c> dialect:cantonese </c></item>
-    /// </list>
-    /// 多个风格可组合使用，格式为 <c>&lt;style&gt;风格&lt;/style&gt;</c>。
+    /// V2.5模型：自然语言风格控制（导演模式），如"Speak slightly fast, cheerful tone"
+    /// V2模型：风格标签，如"林黛玉"、"emotion:happy"，自动包装为&lt;style&gt;标签
     /// </value>
-    public string Style { get; set; } = "林黛玉";
+    public string Style { get; set; } = "";
 }

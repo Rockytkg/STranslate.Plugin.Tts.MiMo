@@ -13,7 +13,8 @@
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice">Voice</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Voice_Description">Click to view available voices</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style">Style</sys:String>
-    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">Supports speed, emotion, role-play, dialect, etc.</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Description">V2.5: Natural language style control | V2: Style tags</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Style_Placeholder">Speak slightly fast, cheerful tone</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Text_Empty">Text content cannot be empty</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Audio_Empty">API returned empty audio data</sys:String>
     <sys:String x:Key="STranslate_Plugin_Tts_MiMo_Parse_Error">Failed to parse API response</sys:String>

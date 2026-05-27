@@ -50,13 +50,21 @@ public partial class SettingsViewModel : ObservableObject, IDisposable
     public partial string Style { get; set; }
 
     /// <summary>
-    /// 可选的音色列表
+    /// 可选的音色列表（包含V2和V2.5的音色）
     /// </summary>
     public ObservableCollection<VoiceItem> Voices { get; } =
     [
         new("MiMo-默认", "mimo_default"),
         new("MiMo-中文女声", "default_zh"),
-        new("MiMo-英文女声", "default_en")
+        new("MiMo-英文女声", "default_en"),
+        new("Mia (V2.5)", "Mia"),
+        new("Chloe (V2.5)", "Chloe"),
+        new("Milo (V2.5)", "Milo"),
+        new("Dean (V2.5)", "Dean"),
+        new("冰糖 (V2.5)", "冰糖"),
+        new("茉莉 (V2.5)", "茉莉"),
+        new("苏打 (V2.5)", "苏打"),
+        new("白桦 (V2.5)", "白桦")
     ];
 
     /// <summary>

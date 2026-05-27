@@ -78,26 +78,48 @@ public class Main : ITtsPlugin
             return;
         }
 
-        // 注入风格标签：MiMo API要求将风格包装在<style>标签中
-        var styleText = !string.IsNullOrWhiteSpace(Settings.Style)
-            ? $"<style>{Settings.Style}</style>{text}"
-            : text;
-
         try
         {
+            // 根据模型版本构造不同的消息格式
+            // V2.5: 使用user消息进行自然语言风格控制，assistant消息为待合成文本
+            // V2: 使用<style>标签前缀注入风格
+            var isV25 = Settings.Model.StartsWith("mimo-v2.5", StringComparison.OrdinalIgnoreCase);
+            var hasStyle = !string.IsNullOrWhiteSpace(Settings.Style);
+
+            object[] messages;
+            if (isV25)
+            {
+                // V2.5: user消息用于风格控制（导演模式），assistant消息为待合成文本
+                messages = hasStyle
+                    ? [
+                        new { role = "user", content = Settings.Style },
+                        new { role = "assistant", content = text }
+                    ]
+                    : [new { role = "assistant", content = text }];
+            }
+            else
+            {
+                // V2: 使用<style>标签前缀注入风格
+                var styleText = hasStyle ? $"<style>{Settings.Style}</style>{text}" : text;
+                messages =
+                [
+                    new { role = "user", content = "" },
+                    new { role = "assistant", content = styleText }
+                ];
+            }
+
             // 构造API请求体（Chat Completions格式）
+            // V2仅支持: mimo_default, default_zh, default_en
+            // V2.5支持所有音色，包括Mia, Chloe等
+            var voice = isV25 ? Settings.Voice : GetV2CompatibleVoice(Settings.Voice);
             var requestBody = new
             {
                 model = Settings.Model,
-                messages = new[]
-                {
-                    new { role = "user", content = "" },
-                    new { role = "assistant", content = styleText }
-                },
+                messages,
                 audio = new
                 {
                     format = "mp3",
-                    voice = Settings.Voice
+                    voice
                 }
             };
 
@@ -165,4 +187,19 @@ public class Main : ITtsPlugin
             Context.Snackbar.ShowError(ex.Message);
         }
     }
+
+    /// <summary>
+    /// 将V2.5音色转换为V2兼容音色
+    /// </summary>
+    /// <param name="voice">当前设置的音色</param>
+    /// <returns>V2兼容的音色标识</returns>
+    /// <remarks>
+    /// V2仅支持: mimo_default, default_zh, default_en
+    /// V2.5专属音色（Mia, Chloe等）会回退到mimo_default
+    /// </remarks>
+    private static string GetV2CompatibleVoice(string voice) => voice switch
+    {
+        "mimo_default" or "default_zh" or "default_en" => voice,
+        _ => "mimo_default"
+    };
 }
